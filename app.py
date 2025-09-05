@@ -443,6 +443,7 @@ def process_audio():
 
     except Exception as e:
         import traceback
+import dbdemos_tracker
         error_traceback = traceback.format_exc()
         error_message = f"An error occurred during audio processing: {str(e)}"
 
@@ -462,4 +463,5 @@ def clear_history():
     return jsonify({'success': True})
 
 if __name__ == '__main__':
+    dbdemos_tracker.initialize()
     app.run(debug=True, host='0.0.0.0', port=5000)
