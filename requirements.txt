@@ -6,4 +6,4 @@ flask
 markupsafe
 markdown2
 pydub
-litellm==1.76.1
+litellm==1.76.1dbdemos-tracker
