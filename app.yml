@@ -1,0 +1,4 @@
+runtime: python_3.11
+command: ['flask', '--app','app:app','run']
+dependencies:
+  - requirements.txt
